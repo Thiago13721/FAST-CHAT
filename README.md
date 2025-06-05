@@ -54,7 +54,7 @@ users.json (arquivo)
 1. Clone o repositório:
 
 ```
-git clone https://github.com/Mesquitabarbara/Fast-Chat-Delivery?tab=readme-ov-file#fast-chat-delivery
+git clone https://github.com/Thiago13721/FAST-CHAT
 cd FastChat delivery
 ```
 
