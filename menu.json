@@ -1,0 +1,221 @@
+[
+  {
+    "id": "pizza_calabresa",
+    "item": "pizza calabresa",
+    "price": 22.00,
+    "category": "Pizzas",
+    "aliases": ["calabresa", "pizza de calabresa", "uma calabresa", "quero calabresa", "calabreza", "Calabresa"]
+  },
+  {
+    "id": "pizza_marguerita",
+    "item": "pizza marguerita",
+    "price": 20.00,
+    "category": "Pizzas",
+    "aliases": ["marguerita", "pizza marguerita", "uma marguerita", "Marguerida"]
+  },
+  {
+    "id": "pizza_frango_catupiry",
+    "item": "pizza frango com Catupiry",
+    "price": 25.00,
+    "category": "Pizzas",
+    "aliases": ["frango com catupiry", "pizza de frango com catupiry", "frango catupiry", "Frango com catupiry"]
+  },
+  {
+    "id": "pizza_portuguesa",
+    "item": "pizza portuguesa",
+    "price": 24.00,
+    "category": "Pizzas",
+    "aliases": ["portuguesa", "pizza portuguesa", "Portuguesa"]
+  },
+  {
+    "id": "pizza_pepperoni",
+    "item": "pizza pepperoni",
+    "price": 23.00,
+    "category": "Pizzas",
+    "aliases": ["pepperoni", "pizza pepperoni", "Pepperoni"]
+  },
+  {
+    "id": "hamburguer_tradicional",
+    "item": "Tradicional",
+    "price": 18.00,
+    "category": "Hambúrgueres",
+    "aliases": ["tradicional", "hamburguer tradicional"]
+  },
+  {
+    "id": "hamburguer_x_salada",
+    "item": "X-Salada",
+    "price": 20.00,
+    "category": "Hambúrgueres",
+    "aliases": ["x-salada", "x salada"]
+  },
+  {
+    "id": "hamburguer_x_bacon",
+    "item": "X-Bacon",
+    "price": 22.00,
+    "category": "Hambúrgueres",
+    "aliases": ["x-bacon", "x bacon"]
+  },
+  {
+    "id": "hamburguer_duplo",
+    "item": "Duplo",
+    "price": 25.00,
+    "category": "Hambúrgueres",
+    "aliases": ["duplo", "hamburguer duplo"]
+  },
+  {
+    "id": "hamburguer_veggie",
+    "item": "Veggie",
+    "price": 19.00,
+    "category": "Hambúrgueres",
+    "aliases": ["veggie", "hamburguer veggie", "hamburguer vegetariano"]
+  },
+  {
+    "id": "batata_frita_p",
+    "item": "Batata Frita (P)",
+    "price": 10.0,
+    "category": "Acompanhamentos",
+    "aliases": [
+      "batata frita (p) por favor",
+      "quero batata frita (p)",
+      "batata frita",
+      "batata frita (p) pequeno",
+      "batata frita (p)"
+    ]
+  },
+  {
+    "id": "batata_frita_g",
+    "item": "Batata Frita (G)",
+    "price": 15.0,
+    "category": "Acompanhamentos",
+    "aliases": [
+      "batata frita",
+      "batata frita (g) por favor",
+      "quero batata frita (g)",
+      "batata frita (g)"
+    ]
+  },
+  {
+    "id": "onion_rings",
+    "item": "Onion Rings",
+    "price": 12.0,
+    "category": "Acompanhamentos",
+    "aliases": [
+      "quero onion rings",
+      "onion rings",
+      "onion rings por favor"
+    ]
+  },
+  {
+    "id": "nuggets_10_unidades",
+    "item": "Nuggets (10 unidades)",
+    "price": 14.0,
+    "category": "Acompanhamentos",
+    "aliases": [
+      "quero nuggets (10 unidades)",
+      "nuggets",
+      "nuggets (10 unidades) por favor",
+      "nuggets (10 unidades)"
+    ]
+  },
+  {
+    "id": "refrigerante_lata",
+    "item": "Refrigerante (Lata)",
+    "price": 5.0,
+    "category": "Bebidas",
+    "aliases": [
+      "refrigerante",
+      "refrigerante (lata) por favor",
+      "quero refrigerante (lata)",
+      "refrigerante (lata)"
+    ]
+  },
+  {
+    "id": "refrigerante_2l",
+    "item": "Refrigerante (2L)",
+    "price": 12.0,
+    "category": "Bebidas",
+    "aliases": [
+      "refrigerante (2l)",
+      "refrigerante",
+      "refrigerante (2l) por favor",
+      "quero refrigerante (2l)"
+    ]
+  },
+  {
+    "id": "suco_natural",
+    "item": "Suco Natural",
+    "price": 8.0,
+    "category": "Bebidas",
+    "aliases": [
+      "quero suco natural",
+      "suco natural",
+      "suco natural por favor"
+    ]
+  },
+  {
+    "id": "água_mineral",
+    "item": "Água Mineral",
+    "price": 4.0,
+    "category": "Bebidas",
+    "aliases": [
+      "água mineral por favor",
+      "quero água mineral",
+      "água mineral"
+    ]
+  },
+  {
+    "id": "salada_caesar",
+    "item": "Salada Caesar",
+    "price": 16.0,
+    "category": "Saladas",
+    "aliases": [
+      "quero salada caesar",
+      "salada caesar por favor",
+      "salada caesar"
+    ]
+  },
+  {
+    "id": "salada_mista",
+    "item": "Salada Mista",
+    "price": 14.0,
+    "category": "Saladas",
+    "aliases": [
+      "salada mista por favor",
+      "quero salada mista",
+      "salada mista"
+    ]
+  },
+  {
+    "id": "brownie",
+    "item": "Brownie",
+    "price": 7.0,
+    "category": "Sobremesas",
+    "aliases": [
+      "brownie",
+      "quero brownie",
+      "brownie por favor"
+    ]
+  },
+  {
+    "id": "mousse_de_chocolate",
+    "item": "Mousse de Chocolate",
+    "price": 9.0,
+    "category": "Sobremesas",
+    "aliases": [
+      "mousse de chocolate por favor",
+      "mousse de chocolate",
+      "quero mousse de chocolate"
+    ]
+  },
+  {
+    "id": "sorvete",
+    "item": "Sorvete",
+    "price": 10.0,
+    "category": "Sobremesas",
+    "aliases": [
+      "sorvete por favor",
+      "sorvete",
+      "quero sorvete"
+    ]
+  }
+ ]

@@ -1,0 +1,7 @@
+flask
+transformers
+torch
+scikit-learn
+pandas
+joblib
+unidecode

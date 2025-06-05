@@ -1,0 +1,16 @@
+bibliotecas:
+pip install flask
+pip install transformers
+pip install torch
+pip install scikit-learn
+pip install pandas
+pip install spacy
+pip install pt-core-news-sm
+python -m spacy download pt_core_news_sm
+
+para adicionar itens é so pedir, e para remover algum item o comando é: remover item (nome do item) (a quantidade que deseja remover)
+
+
+
+
+

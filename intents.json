@@ -1,0 +1,511 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "oi",
+        "olá",
+        "bom dia",
+        "boa tarde",
+        "e aí",
+        "fala",
+        "oii",
+        "ola",
+        "oi tudo bem",
+        "ola tudo bem",
+        "como vai",
+        "tudo bem",
+        "hey",
+        "olá, tudo bem?",
+        "e aí, beleza?"
+      ],
+      "responses": [
+        "Olá! Como posso ajudar você hoje?",
+        "Oi! Em que posso ajudar?",
+        "Bem-vindo! O que deseja pedir hoje?",
+        "Olá! Estou aqui para ajudar no que precisar."
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "tchau",
+        "até mais",
+        "adeus",
+        "falou",
+        "valeu, até",
+        "até logo",
+        "até a próxima",
+        "flw",
+        "vou sair",
+        "até mais tarde",
+        "até breve",
+        "obrigado"
+      ],
+      "responses": [
+        "Até mais! Volte sempre.",
+        "Obrigado pela visita! Até logo.",
+        "Foi um prazer atender você!",
+        "Até breve! Qualquer coisa, só chamar."
+      ]
+    },
+    {
+      "tag": "agradecimento",
+      "patterns": [
+        "obrigado",
+        "valeu",
+        "agradeço",
+        "muito obrigado",
+        "brigado",
+        "obrigada",
+        "muito obrigada",
+        "grato",
+        "agradecida"
+      ],
+      "responses": [
+        "Por nada! Estou aqui para ajudar.",
+        "De nada! Qualquer coisa, só chamar.",
+        "Disponha!",
+        "Que bom ajudar! Conte comigo."
+      ]
+    },
+    {
+      "tag": "ver_cardapio",
+      "patterns": [
+        "qual é o cardápio?",
+        "me mostra o cardápio",
+        "o que vocês têm?",
+        "menu",
+        "o que tem no cardápio?",
+        "quais opções vocês têm?",
+        "cardápio",
+        "cardapio",
+        "lista de lanches",
+        "quais sabores de pizza?",
+        "preços",
+        "quanto custa",
+        "quanto é"
+      ],
+      "responses": [
+        "Nosso cardápio completo:\n\n🍕 **Pizzas**:\n  - Pizza Calabresa: R$ 22.00\n  - Pizza Pizza Marguerita: R$ 20.00\n  - Pizza Frango com Catupiry: R$ 25.00\n  - Pizza Portuguesa: R$ 24.00\n  - Pizza Pepperoni: R$ 23.00\n\n🍔 **Hambúrgueres**:\n  - Tradicional: R$ 18.00\n  - X-Salada: R$ 20.00\n  - X-Bacon: R$ 22.00\n  - Duplo: R$ 25.00\n  - Veggie: R$ 19.00\n\n🍟 **Acompanhamentos**:\n  - Batata Frita (P): R$ 10.00\n  - Batata Frita (G): R$ 15.00\n  - Onion Rings: R$ 12.00\n  - Nuggets (10 unidades): R$ 14.00\n\n🥤 **Bebidas**:\n  - Refrigerante (Lata): R$ 5.00\n  - Refrigerante (2L): R$ 12.00\n  - Suco Natural: R$ 8.00\n  - Água Mineral: R$ 4.00\n\n🥗 **Saladas**:\n  - Salada Caesar: R$ 16.00\n  - Salada Mista: R$ 14.00\n\n🍰 **Sobremesas**:\n  - Brownie: R$ 7.00\n  - Mousse de Chocolate: R$ 9.00\n  - Sorvete: R$ 10.00"
+      ]
+    },
+    {
+      "tag": "pedido",
+      "patterns": [
+        "quero fazer um pedido",
+        "fazer pedido",
+        "pedido",
+        "quero pedir",
+        "como faço um pedido",
+        "gostaria de pedir",
+        "fazer uma compra",
+        "quero comprar",
+        "quero algo para comer",
+        "posso pedir agora?",
+        "como faço para pedir?",
+        "desejo fazer um pedido",
+        "quero um lanche"
+      ],
+      "responses": [
+        "Claro! O que você gostaria de pedir?",
+        "Pode me falar o que deseja pedir?",
+        "Estou pronto para anotar seu pedido.",
+        "Conte-me o que deseja pedir hoje."
+      ]
+    },
+    {
+      "tag": "horario",
+      "patterns": [
+        "qual o horário de funcionamento?",
+        "até que horas vocês ficam abertos?",
+        "horário",
+        "quando vocês abrem?",
+        "horário de atendimento",
+        "que horas abre?",
+        "que horas fecha?",
+        "horas de funcionamento",
+        "abertura e fechamento"
+      ],
+      "responses": [
+        "Estamos abertos todos os dias das 10h às 22h.",
+        "Funcionamos das 10h até as 22h, todos os dias.",
+        "Nosso horário é das 10h às 22h, todos os dias."
+      ]
+    },
+    {
+      "tag": "localizacao",
+      "patterns": [
+        "onde vocês ficam?",
+        "qual o endereço?",
+        "localização",
+        "onde está a loja?",
+        "qual o local?",
+        "onde posso encontrar vocês?",
+        "qual o endereço da loja?",
+        "onde fica o restaurante?"
+      ],
+      "responses": [
+        "Estamos localizados na Rua Principal, 123, Centro.",
+        "Nossa loja fica na Rua Principal, número 123, no Centro.",
+        "Você nos encontra na Rua Principal, 123, no Centro da cidade."
+      ]
+    },
+
+{
+      "tag": "edicao_pedido",
+      "patterns": [
+        "editar pedido",
+        "modificar pedido",
+        "alterar pedido",
+        "mudar pedido"
+      ],
+      "responses": [
+        "O que você gostaria de fazer? (cancelar, adicionar, editar, remover)"
+      ]
+    },
+
+    {
+      "tag": "edicao_pedido_cancelar",
+      "patterns": [
+        "cancelar",
+        "quero cancelar",
+        "cancelar o pedido"
+      ],
+      "responses": [
+        "Ok, pedido cancelado."
+      ]
+    },
+{
+      "tag": "edicao_pedido_adicionar",
+      "patterns": [
+        "adicionar",
+        "quero adicionar",
+        "adicionar itens",
+        "adicionar mais itens"
+      ],
+      "responses": [
+        "Ok, o que você gostaria de adicionar?"
+      ]
+    },
+
+    {
+      "tag": "edicao_pedido_editar",
+      "patterns": [
+        "editar",
+        "quero editar",
+        "editar itens",
+        "editar quantidade",
+        "editar quantidades",
+        "mudar quantidade",
+        "alterar quantidade"
+      ],
+      "responses": [
+        "Ok, qual item e qual quantidade você gostaria de editar?"
+      ]
+    },
+
+    {
+      "tag": "edicao_pedido_remover",
+      "patterns": [
+        "remover",
+        "quero remover",
+        "remover itens",
+        "remover item",
+        "tirar item",
+        "excluir item"
+      ],
+      "responses": [
+        "Ok, qual item você gostaria de remover?"
+      ]
+    },
+
+    {
+      "tag": "tempo_entrega",
+      "patterns": [
+        "quanto tempo para entrega?",
+        "tempo de entrega",
+        "quanto tempo demora o pedido?",
+        "em quanto tempo chega?",
+        "tempo de entrega do pedido",
+        "entrega rápida?",
+        "quanto demora a entrega?",
+        "em quanto tempo chega o lanche?"
+      ],
+      "responses": [
+        "O tempo médio de entrega é de 30 a 45 minutos.",
+        "Normalmente entregamos em até 45 minutos.",
+        "Seu pedido chega em até 45 minutos, dependendo da localização."
+      ]
+    },
+    {
+      "tag": "tempo_preparo",
+      "patterns": [
+        "quanto tempo para preparar?",
+        "tempo de preparo",
+        "quanto tempo demora para preparar o pedido?",
+        "preparo do pedido",
+        "tempo para fazer o pedido",
+        "quanto tempo leva para preparar?",
+        "quanto tempo demora o lanche?"
+      ],
+      "responses": [
+        "O preparo leva cerca de 15 a 20 minutos.",
+        "Normalmente preparamos seu pedido em até 20 minutos.",
+        "Seu pedido será preparado em até 20 minutos."
+      ]
+    },
+    {
+      "tag": "promocao",
+      "patterns": [
+        "tem promoção?",
+        "promoções",
+        "ofertas",
+        "descontos",
+        "tem alguma promoção hoje?",
+        "quais as promoções?",
+        "promoção de hoje",
+        "alguma oferta especial?",
+        "desconto disponível?"
+      ],
+      "responses": [
+        "Hoje temos promoção no combo de hambúrguer + refrigerante!",
+        "Temos desconto especial para pedidos acima de R$50.",
+        "Aproveite nossas promoções exclusivas do dia!"
+      ]
+    },
+    {
+      "tag": "pedido_confirmacao",
+      "patterns": [
+        "confirmar pedido",
+        "finalizar pedido",
+        "confirmar minha compra",
+        "quero finalizar",
+        "concluir pedido",
+        "terminar pedido",
+        "fechar pedido",
+        "sim",
+        "quero",
+        "sim, quero",
+        "confirmar",
+        "quero confirmar",
+        "pode confirmar",
+        "pode confirmar o pedido",
+        "vamos finalizar",
+        "quero finalizar o pedido",
+        "sim, vamos pagar",
+        "isso mesmo",
+        "correto",
+        "exato"
+      ],
+      "responses": [
+        "Pedido confirmado! Obrigado pela preferência.",
+        "Seu pedido foi finalizado com sucesso. Obrigado!",
+        "Compra concluída. Agradecemos sua preferência!"
+      ]
+    },
+    {
+      "tag": "pedido_cancelar",
+      "patterns": [
+        "cancelar pedido",
+        "quero cancelar",
+        "cancelar minha compra",
+        "desistir do pedido",
+        "não quero mais o pedido",
+        "cancelar",
+        "não",
+        "nao",
+        "não quero",
+        "nao quero",
+        "cancelar o pedido",
+        "pode cancelar",
+        "não quero mais",
+        "desisto"
+      ],
+      "responses": [
+        "Pedido cancelado. Se precisar de algo, é só chamar.",
+        "Seu pedido foi cancelado com sucesso.",
+        "Cancelamos seu pedido. Qualquer coisa, estamos aqui para ajudar."
+      ]
+    },
+
+ {
+      "tag": "confirmacao_pagamento",
+      "patterns": [
+        "sim, quero pagar",
+        "quero pagar",
+        "sim",
+        "quero",
+        "sim, quero confirmar",
+        "quero confirmar o pedido",
+        "quero confirmar e pagar",
+        "pode confirmar",
+        "pode confirmar o pedido",
+        "vamos finalizar",
+        "quero finalizar o pedido",
+        "sim, vamos pagar"
+
+      ],
+      "responses": [
+        "Qual a forma de pagamento? Cartão, Pix ou dinheiro?"
+      ]
+    },
+
+{
+      "tag": "negacao_confirmacao_pagamento",
+      "patterns": [
+        "não",
+        "nao",
+        "não quero",
+        "nao quero",
+        "não, obrigado"
+      ],
+      "responses": [
+        "Tudo bem. Se precisar de algo mais, é só dizer."
+      ]
+    },
+
+    {
+  "tag": "pagamento_forma",
+  "patterns": [
+    "cartão",
+    "vou pagar com cartão",
+    "pix",
+    "vou pagar com pix",
+    "dinheiro",
+    "vou pagar com dinheiro",
+    "dinheiro trocado",
+    "vou dar em dinheiro"
+  ],
+  "responses": [
+    "Pagamento registrado como: {pagamento}. Gerando comprovante..."
+  ]
+},
+    {
+      "tag": "status_pedido",
+      "patterns": [
+        "qual o status do meu pedido?",
+        "meu pedido está pronto?",
+        "pedido saiu para entrega?",
+        "rastrear pedido",
+        "onde está meu pedido?"
+      ],
+      "responses": [
+        "Seu pedido está em preparo, logo estará a caminho!",
+        "Seu pedido já saiu para entrega, aguarde!",
+        "Ainda estamos preparando seu pedido. Obrigado pela paciência!"
+      ]
+    },
+    {
+      "tag": "reclamacao",
+      "patterns": [
+        "reclamar",
+        "não chegou meu pedido",
+        "pedido errado",
+        "problema com o pedido",
+        "pedido atrasado"
+      ],
+      "responses": [
+        "Sinto muito pelo inconveniente. Pode me informar o que houve?",
+        "Vamos resolver isso para você! Por favor, descreva o problema.",
+        "Desculpe pelo transtorno. Vou encaminhar para o responsável."
+      ]
+    },
+    {
+      "tag": "horario_pico",
+      "patterns": [
+        "tempo de espera no horário de pico",
+        "tempo de entrega no horário de almoço",
+        "demora mais na hora do rush?"
+      ],
+      "responses": [
+        "Em horários de pico, o tempo pode aumentar para até 1 hora.",
+        "Durante o almoço, nosso tempo de entrega pode ser um pouco maior.",
+        "Nos esforçamos para manter a entrega rápida, mesmo em horários movimentados."
+      ]
+    },
+    {
+      "tag": "contato",
+      "patterns": [
+        "como falar com atendimento?",
+        "quero falar com alguém",
+        "suporte",
+        "atendimento ao cliente"
+      ],
+      "responses": [
+        "Você pode falar com nosso atendimento pelo telefone (xx) xxxx-xxxx.",
+        "Estamos aqui para ajudar! Qual sua dúvida?",
+        "Se preferir, posso encaminhar sua mensagem para um atendente humano."
+      ]
+    },
+    {
+      "tag": "ajuda",
+      "patterns": [
+        "como usar o chatbot",
+        "ajuda",
+        "não sei como pedir",
+        "como funciona",
+        "preciso de ajuda"
+      ],
+      "responses": [
+        "Você pode fazer pedidos dizendo, por exemplo, 'quero 2 pizzas e 1 refrigerante'.",
+        "Estou aqui para ajudar! Pode pedir o que quiser do nosso cardápio.",
+        "Se precisar, posso explicar como funciona o atendimento por aqui."
+      ]
+    },
+    {
+      "tag": "pagamento_selecao",
+      "patterns": [
+        "pagar com dinheiro",
+        "pagar com cartão",
+        "pagar com pix",
+        "dinheiro",
+        "cartão",
+        "pix",
+        "cartao"
+      ],
+      "responses": [
+        "Ok, pagamento registrado.",
+        "Tudo certo, pagamento confirmado.",
+        "Perfeito, pagamento recebido."
+      ]
+    },
+
+{
+      "tag": "status_pedido",
+      "patterns": [
+        "qual o status do meu pedido?",
+        "meu pedido está pronto?",
+        "pedido saiu para entrega?",
+        "rastrear pedido",
+        "onde está meu pedido?",
+        "como está meu pedido?",
+        "já saiu para entrega?",
+        "quanto tempo falta para chegar?",
+        "notícias do meu pedido"
+      ],
+      "responses": [
+        "Seu pedido está sendo preparado com carinho! 🍔🍕",
+        "Seu pedido saiu para entrega e deve chegar em breve! 🛵💨",
+        "Estamos embalando seu pedido para envio! 📦",
+        "Quase pronto! Só mais alguns minutinhos e seu pedido estará a caminho. ⏳"
+      ]
+    },
+
+    {
+      "tag": "pedido_finalizado",
+      "patterns": [
+        "meu pedido",
+        "status do pedido",
+        "quando chega?",
+        "acompanhar pedido"
+      ],
+      "responses": [
+        "Seu pedido já foi finalizado e está a caminho.",
+        "O pagamento foi confirmado. Seu pedido será entregue em breve.",
+        "Obrigado! Seu pedido está sendo preparado."
+      ]
+    }
+  ],
+  "fallback": "Desculpe, não entendi. Poderia reformular ou pedir ajuda? Estou aqui para ajudar no que precisar."
+}

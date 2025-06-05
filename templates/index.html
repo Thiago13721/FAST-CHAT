@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat fast food</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+
+  </style>
+</head>
+<body style="background-color:rgb(229, 149, 75)">
+  <div class="chat-container">
+    <center><h2 style="font-family: 'Garamond'; color: rgb(0, 0, 0);font-size: 40px; animation: pulsar 1.5s infinite alternate;">FastChat</h2>
+      <style>
+        @keyframes pulsar {
+          0% { letter-spacing: 2px; color: #442a14;}
+          100% { letter-spacing: 10px; color: #925021;}
+        }
+        </style>
+      <img src="{{ url_for('static', filename='logo.jpeg') }}" alt="Logo da empresa" width="200">
+      <h2 style="font-family: 'Arial'; color: rgb(0, 0, 0);font-size: 10px"> Seja bem vindo ao nosso chat bot, o que gostaria de pedir?</h2>
+    <div id="chat-box"></div></p>
+    <input type="text" id="user-input" placeholder="Digite aqui..." autofocus style="padding: 10px 16px; border: 2px solid #3498db; border-radius: 6px; font-size: 16px;" />
+    <button onclick="sendMessage()" style="background-color: #ece9e6; color: #121111; border: black; border-radius: 8px; font-size: 19px;">Enviar</button></center>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById("user-input");
+      const msg = input.value.trim();
+      if (!msg) return;
+
+      const chatBox = document.getElementById("chat-box");
+      chatBox.innerHTML += `<div class="user-msg">👤 ${msg}</div>`;
+      input.value = ""; // Limpa o input após enviar a mensagem
+
+      const response = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: msg })
+      });
+      const data = await response.json();
+      // ...
+ // **NOVA LÓGICA AQUI**
+      if (data.action === "restart") {
+        chatBox.innerHTML = ''; // Limpa todo o conteúdo do chat box
+        chatBox.innerHTML += `<div class="bot-msg">🤖 ${data.response}</div>`; // Exibe a mensagem de erro/recomeço
+        // Opcional: Você pode adicionar uma mensagem inicial de boas-vindas novamente aqui
+        // chatBox.innerHTML += `<div class="bot-msg">🤖 Olá! Seja bem-vindo ao nosso chatbot. Como posso ajudar?</div>`;
+      } else {
+        chatBox.innerHTML += `<div class="bot-msg">🤖 ${data.response}</div>`;
+      }
+// ...
+      input.value = "";
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  </script>
+</body>
+</html>
